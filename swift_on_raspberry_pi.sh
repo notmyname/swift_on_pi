@@ -137,10 +137,10 @@ account_autocreate = true
 use = egg:swift#tempauth
 user_admin_admin = admin .admin .reseller_admin
 user_test_tester = testing .admin
-user_test2_tester2 = testing2 .admin http://192.168.52.2:8080/v1/AUTH_test2
-user_test4_tester4 = testing4 .admin http://192.168.52.2:8080/v1/AUTH_test4
+user_test2_tester2 = testing2 .admin
+user_test4_tester4 = testing4 .admin
 user_test_tester3 = testing3
-user_demo_demo = demo .admin http://192.168.52.2:8080/v1/AUTH_abc
+user_demo_demo = demo .admin
 
 [filter:catch_errors]
 use = egg:swift#catch_errors
