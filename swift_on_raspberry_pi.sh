@@ -214,7 +214,7 @@ use = egg:swift#account
 use = egg:swift#recon
 
 [account-replicator]
-vm_test_mode = yes
+rsync_module = {replication_ip}::account{replication_port}
 
 [account-auditor]
 
@@ -243,7 +243,7 @@ use = egg:swift#container
 use = egg:swift#recon
 
 [container-replicator]
-vm_test_mode = yes
+rsync_module = {replication_ip}::container{replication_port}
 
 [container-updater]
 
@@ -274,7 +274,7 @@ use = egg:swift#object
 use = egg:swift#recon
 
 [object-replicator]
-vm_test_mode = yes
+rsync_module = {replication_ip}::object{replication_port}
 
 [object-updater]
 
